@@ -63,9 +63,9 @@ searchByName("");
 //*******   git category */
 category.addEventListener("click", function () {
   gitCategory();
-  closeNave();
 });
 async function gitCategory() {
+  closeNave();
   mealData.innerHTML = "";
   $(".new-loading-screen").fadeIn(300);
 
@@ -75,6 +75,8 @@ async function gitCategory() {
   );
   response = await response.json();
   displayCategory(response.categories);
+  $(".new-loading-screen").fadeOut(300);
+
 }
 function displayCategory(arr) {
   let box = ``;

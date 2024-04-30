@@ -41,9 +41,9 @@ i {
 }
 
 .links ul li:hover {
-  color: rgba(214, 46, 51, 0.4);
+  color: #FF542E;
   transition: 0.3s;
-  transform: translateX(20px);
+  transform: translateX(5px);
 }
 
 /***   meal and layer start  ***/
